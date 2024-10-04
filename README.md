@@ -1,34 +1,34 @@
-This template project demonstrates how to implement a simple token faucet and expose it with a Web UI using Next.js.
+# Create Your Alpehium Fungible Token
 
-## Getting Started
+This project is a starter code that can be used to create a Fungible token on the Alephium Blockchain. The src folder includes the commented scripts for minting and transferring tokens which needs to completed.
 
-### Install
+## Install
 
 ```
 npm install
-
 ```
 
-### Deploy the token faucet contract
+## Running the Devnet
 
-```bash
-# In this case devnet
-npx @alephium/cli deploy -n devnet
+```
+1. Inside a folder, Run `git clone https://github.com/alephium/alephium-stack.git`.
+2. cd `alephium-stack`.
+3. cd `devnet`.
+4. run `docker compose up -d`.
+5. Wait until your devnet server starts, Open Docker Desktop.
 ```
 
-This will compile and deploy the token faucet contracts to all of the
-4 groups on devnet.
+## Compile
 
-### Run the development server
+Compile the TypeScript files into JavaScript:
 
-```bash
-npm run dev
-# or
-yarn dev
+```
+npx @alephium/cli@latest compile 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser
-to see the token faucet application.
+## Testing
 
-Download the [Alephium Extension Wallet](https://github.com/alephium/extension-wallet)
-to interact with the application.
+```
+npx @alephium/cli@latest test
+```
+
